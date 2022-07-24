@@ -1,0 +1,755 @@
+    /* "contracts/slotHack.sol":64:2566  contract slotHack {... */
+  mstore(0x40, 0x80)
+    /* "contracts/slotHack.sol":178:189  0x2560A0256 */
+  0x02560a0256
+    /* "contracts/slotHack.sol":152:189  uint256 public  count_A = 0x2560A0256 */
+  0x00
+  sstore
+    /* "contracts/slotHack.sol":235:246  0x2560B0256 */
+  0x02560b0256
+    /* "contracts/slotHack.sol":209:246  uint256 public  count_B = 0x2560B0256 */
+  0x01
+  sstore
+    /* "contracts/slotHack.sol":292:303  0x2560C0256 */
+  0x02560c0256
+    /* "contracts/slotHack.sol":266:303  uint256 private count_C = 0x2560C0256 */
+  0x02
+  sstore
+    /* "contracts/slotHack.sol":414:476  uint128 private count_128 = 0x128FFFFFFFFFFFFFFFFFFFFFFFFFF128 */
+  0x03
+  dup1
+  sload
+    /* "contracts/slotHack.sol":722:754  uint8   public  count_6   = 0x88 */
+  0xff00000000000000000000000000000000000000000000000000000000000000
+  and
+  sub(shl(0xb8, 0x88161632ffff3265), add(shl(0x74, 0x09bed7), 0x0ed8))
+  or
+  swap1
+  sstore
+    /* "contracts/slotHack.sol":923:956  address public owner = msg.sender */
+  0x04
+  dup1
+  sload
+  shl(0xa0, 0x01)
+  not(sub(shl(0xa8, 0x01), 0x01))
+    /* "contracts/slotHack.sol":975:1002  bool private isOpen1 = true */
+  swap1
+  swap2
+  and
+    /* "contracts/slotHack.sol":946:956  msg.sender */
+  caller
+  not(shl(0xa0, 0xff))
+    /* "contracts/slotHack.sol":975:1002  bool private isOpen1 = true */
+  and
+  or
+  or
+  not(shl(0xa8, 0xffffffff))
+    /* "contracts/slotHack.sol":1183:1210  bool private isOpen5 = true */
+  and
+  shl(0xa8, 0x01010101)
+  or
+  swap1
+  sstore
+    /* "contracts/slotHack.sol":1787:1804  set_item_2(12345) */
+  tag_3
+    /* "contracts/slotHack.sol":1798:1803  12345 */
+  0x3039
+    /* "contracts/slotHack.sol":2027:2042  item_2[count_A] */
+  0x00
+    /* "contracts/slotHack.sol":2034:2041  count_A */
+  dup1
+  sload
+    /* "contracts/slotHack.sol":2027:2042  item_2[count_A] */
+  dup2
+  mstore
+    /* "contracts/slotHack.sol":2027:2033  item_2 */
+  0x0a
+    /* "contracts/slotHack.sol":2027:2042  item_2[count_A] */
+  0x20
+  mstore
+  0x40
+  swap1
+  keccak256
+    /* "contracts/slotHack.sol":2027:2051  item_2[count_A] = _value */
+  sstore
+    /* "contracts/slotHack.sol":1975:2058  function set_item_2(uint256 _value)  public {... */
+  jump
+    /* "contracts/slotHack.sol":1787:1804  set_item_2(12345) */
+tag_3:
+    /* "contracts/slotHack.sol":64:2566  contract slotHack {... */
+  dataSize(sub_0)
+  dup1
+  dataOffset(sub_0)
+  0x00
+  codecopy
+  0x00
+  return
+stop
+
+sub_0: assembly {
+        /* "contracts/slotHack.sol":64:2566  contract slotHack {... */
+      mstore(0x40, 0x80)
+      callvalue
+      dup1
+      iszero
+      tag_1
+      jumpi
+      0x00
+      dup1
+      revert
+    tag_1:
+      pop
+      jumpi(tag_2, lt(calldatasize, 0x04))
+      shr(0xe0, calldataload(0x00))
+      dup1
+      0x85a7f685
+      gt
+      tag_13
+      jumpi
+      dup1
+      0x85a7f685
+      eq
+      tag_8
+      jumpi
+      dup1
+      0x8da5cb5b
+      eq
+      tag_9
+      jumpi
+      dup1
+      0xb2f86fef
+      eq
+      tag_10
+      jumpi
+      dup1
+      0xe92983ec
+      eq
+      tag_11
+      jumpi
+      dup1
+      0xed82860f
+      eq
+      tag_12
+      jumpi
+      0x00
+      dup1
+      revert
+    tag_13:
+      dup1
+      0x054e4ff0
+      eq
+      tag_3
+      jumpi
+      dup1
+      0x44f0061b
+      eq
+      tag_4
+      jumpi
+      dup1
+      0x4ad937d3
+      eq
+      tag_5
+      jumpi
+      dup1
+      0x4ccb68cf
+      eq
+      tag_6
+      jumpi
+      dup1
+      0x5894babc
+      eq
+      tag_7
+      jumpi
+    tag_2:
+      0x00
+      dup1
+      revert
+        /* "contracts/slotHack.sol":722:754  uint8   public  count_6   = 0x88 */
+    tag_3:
+      sload(0x03)
+      tag_14
+      swap1
+      shl(0xf0, 0x01)
+      swap1
+      div
+      0xff
+      and
+      dup2
+      jump
+    tag_14:
+      mload(0x40)
+        /* "#utility.yul":186:190   */
+      0xff
+        /* "#utility.yul":174:191   */
+      swap1
+      swap2
+      and
+        /* "#utility.yul":156:192   */
+      dup2
+      mstore
+        /* "#utility.yul":144:146   */
+      0x20
+        /* "#utility.yul":129:147   */
+      add
+        /* "contracts/slotHack.sol":722:754  uint8   public  count_6   = 0x88 */
+    tag_16:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "contracts/slotHack.sol":152:189  uint256 public  count_A = 0x2560A0256 */
+    tag_4:
+      tag_18
+      sload(0x00)
+      dup2
+      jump
+    tag_18:
+      mload(0x40)
+        /* "#utility.yul":349:374   */
+      swap1
+      dup2
+      mstore
+        /* "#utility.yul":337:339   */
+      0x20
+        /* "#utility.yul":322:340   */
+      add
+        /* "contracts/slotHack.sol":152:189  uint256 public  count_A = 0x2560A0256 */
+      tag_16
+        /* "#utility.yul":203:380   */
+      jump
+        /* "contracts/slotHack.sol":1593:1635  mapping(uint256 => uint256) public  item_1 */
+    tag_5:
+      tag_18
+      tag_23
+      calldatasize
+      0x04
+      tag_24
+      jump	// in
+    tag_23:
+      mstore(0x20, 0x09)
+      0x00
+      swap1
+      dup2
+      mstore
+      0x40
+      swap1
+      keccak256
+      sload
+      dup2
+      jump
+        /* "contracts/slotHack.sol":209:246  uint256 public  count_B = 0x2560B0256 */
+    tag_6:
+      tag_18
+      sload(0x01)
+      dup2
+      jump
+        /* "contracts/slotHack.sol":1817:1893  function set_count_A(uint256 _value)  public {... */
+    tag_7:
+      tag_30
+      tag_31
+      calldatasize
+      0x04
+      tag_24
+      jump	// in
+    tag_31:
+        /* "contracts/slotHack.sol":1870:1877  count_A */
+      0x00
+        /* "contracts/slotHack.sol":1870:1886  count_A = _value */
+      sstore
+        /* "contracts/slotHack.sol":1817:1893  function set_count_A(uint256 _value)  public {... */
+      jump
+    tag_30:
+      stop
+        /* "contracts/slotHack.sol":1332:1372  uint256 public constant fixed_num = 0xC1 */
+    tag_8:
+      tag_18
+        /* "contracts/slotHack.sol":1368:1372  0xC1 */
+      0xc1
+        /* "contracts/slotHack.sol":1332:1372  uint256 public constant fixed_num = 0xC1 */
+      dup2
+      jump
+        /* "contracts/slotHack.sol":923:956  address public owner = msg.sender */
+    tag_9:
+      sload(0x04)
+      tag_36
+      swap1
+      sub(shl(0xa0, 0x01), 0x01)
+      and
+      dup2
+      jump
+    tag_36:
+      mload(0x40)
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "#utility.yul":734:766   */
+      swap1
+      swap2
+      and
+        /* "#utility.yul":716:767   */
+      dup2
+      mstore
+        /* "#utility.yul":704:706   */
+      0x20
+        /* "#utility.yul":689:707   */
+      add
+        /* "contracts/slotHack.sol":923:956  address public owner = msg.sender */
+      tag_16
+        /* "#utility.yul":570:773   */
+      jump
+        /* "contracts/slotHack.sol":1898:1970  function set_item_1()  public {... */
+    tag_10:
+      tag_30
+        /* "contracts/slotHack.sol":1943:1951  0xC0FFEE */
+      0xc0ffee
+        /* "contracts/slotHack.sol":1936:1952  item_1[0xC0FFEE] */
+      0x00
+      mstore
+        /* "contracts/slotHack.sol":1936:1942  item_1 */
+      0x09
+        /* "contracts/slotHack.sol":1936:1952  item_1[0xC0FFEE] */
+      0x20
+      mstore
+        /* "contracts/slotHack.sol":1955:1963  0x123456 */
+      0x123456
+        /* "contracts/slotHack.sol":1936:1952  item_1[0xC0FFEE] */
+      0x72bdf52c6f621043b2b05c8924fafe5dd47184c50cf5fbb9c698fd35d489b5e7
+        /* "contracts/slotHack.sol":1936:1963  item_1[0xC0FFEE] = 0x123456 */
+      sstore
+        /* "contracts/slotHack.sol":1898:1970  function set_item_1()  public {... */
+      jump
+        /* "contracts/slotHack.sol":2064:2564  function guess_item_2(uint256 _guessValue) public view returns(string memory){       ... */
+    tag_11:
+      tag_42
+      tag_43
+      calldatasize
+      0x04
+      tag_24
+      jump	// in
+    tag_43:
+      tag_44
+      jump	// in
+    tag_42:
+      mload(0x40)
+      tag_16
+      swap2
+      swap1
+      tag_46
+      jump	// in
+        /* "contracts/slotHack.sol":1975:2058  function set_item_2(uint256 _value)  public {... */
+    tag_12:
+      tag_30
+      tag_48
+      calldatasize
+      0x04
+      tag_24
+      jump	// in
+    tag_48:
+        /* "contracts/slotHack.sol":2027:2042  item_2[count_A] */
+      0x00
+        /* "contracts/slotHack.sol":2034:2041  count_A */
+      dup1
+      sload
+        /* "contracts/slotHack.sol":2027:2042  item_2[count_A] */
+      dup2
+      mstore
+        /* "contracts/slotHack.sol":2027:2033  item_2 */
+      0x0a
+        /* "contracts/slotHack.sol":2027:2042  item_2[count_A] */
+      0x20
+      mstore
+      0x40
+      swap1
+      keccak256
+        /* "contracts/slotHack.sol":2027:2051  item_2[count_A] = _value */
+      sstore
+        /* "contracts/slotHack.sol":1975:2058  function set_item_2(uint256 _value)  public {... */
+      jump
+        /* "contracts/slotHack.sol":2064:2564  function guess_item_2(uint256 _guessValue) public view returns(string memory){       ... */
+    tag_44:
+        /* "contracts/slotHack.sol":2165:2180  item_2[count_A] */
+      0x00
+        /* "contracts/slotHack.sol":2172:2179  count_A */
+      dup1
+      sload
+        /* "contracts/slotHack.sol":2165:2180  item_2[count_A] */
+      dup2
+      mstore
+        /* "contracts/slotHack.sol":2165:2171  item_2 */
+      0x0a
+        /* "contracts/slotHack.sol":2165:2180  item_2[count_A] */
+      0x20
+      mstore
+      0x40
+      dup2
+      keccak256
+      sload
+        /* "contracts/slotHack.sol":2127:2140  string memory */
+      0x60
+      swap2
+        /* "contracts/slotHack.sol":2165:2185  item_2[count_A] != 0 */
+      sub
+        /* "contracts/slotHack.sol":2157:2217  require(item_2[count_A] != 0, "The value has not been set.") */
+      tag_53
+      jumpi
+      mload(0x40)
+      shl(0xe5, 0x461bcd)
+      dup2
+      mstore
+        /* "#utility.yul":1582:1584   */
+      0x20
+        /* "contracts/slotHack.sol":2157:2217  require(item_2[count_A] != 0, "The value has not been set.") */
+      0x04
+      dup3
+      add
+        /* "#utility.yul":1564:1585   */
+      mstore
+        /* "#utility.yul":1621:1623   */
+      0x1b
+        /* "#utility.yul":1601:1619   */
+      0x24
+      dup3
+      add
+        /* "#utility.yul":1594:1624   */
+      mstore
+        /* "#utility.yul":1660:1689   */
+      0x5468652076616c756520686173206e6f74206265656e207365742e0000000000
+        /* "#utility.yul":1640:1658   */
+      0x44
+      dup3
+      add
+        /* "#utility.yul":1633:1690   */
+      mstore
+        /* "#utility.yul":1707:1725   */
+      0x64
+      add
+        /* "contracts/slotHack.sol":2157:2217  require(item_2[count_A] != 0, "The value has not been set.") */
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      revert
+    tag_53:
+        /* "contracts/slotHack.sol":2230:2245  item_2[count_A] */
+      0x00
+        /* "contracts/slotHack.sol":2237:2244  count_A */
+      dup1
+      sload
+        /* "contracts/slotHack.sol":2230:2245  item_2[count_A] */
+      dup2
+      mstore
+        /* "contracts/slotHack.sol":2230:2236  item_2 */
+      0x0a
+        /* "contracts/slotHack.sol":2230:2245  item_2[count_A] */
+      0x20
+      mstore
+      0x40
+      swap1
+      keccak256
+      sload
+        /* "contracts/slotHack.sol":2230:2259  item_2[count_A] < _guessValue */
+      dup3
+      gt
+        /* "contracts/slotHack.sol":2226:2558  if (item_2[count_A] < _guessValue) {... */
+      iszero
+      tag_56
+      jumpi
+      pop
+      pop
+        /* "contracts/slotHack.sol":2271:2302  return "Greater than the value" */
+      0x40
+      dup1
+      mload
+      dup1
+      dup3
+      add
+      swap1
+      swap2
+      mstore
+      0x16
+      dup2
+      mstore
+      shl(0x50, 0x47726561746572207468616e207468652076616c7565)
+      0x20
+      dup3
+      add
+      mstore
+      swap1
+        /* "contracts/slotHack.sol":2064:2564  function guess_item_2(uint256 _guessValue) public view returns(string memory){       ... */
+      jump	// out
+        /* "contracts/slotHack.sol":2226:2558  if (item_2[count_A] < _guessValue) {... */
+    tag_56:
+        /* "contracts/slotHack.sol":2329:2344  item_2[count_A] */
+      0x00
+        /* "contracts/slotHack.sol":2336:2343  count_A */
+      dup1
+      sload
+        /* "contracts/slotHack.sol":2329:2344  item_2[count_A] */
+      dup2
+      mstore
+        /* "contracts/slotHack.sol":2329:2335  item_2 */
+      0x0a
+        /* "contracts/slotHack.sol":2329:2344  item_2[count_A] */
+      0x20
+      mstore
+      0x40
+      swap1
+      keccak256
+      sload
+        /* "contracts/slotHack.sol":2329:2358  item_2[count_A] > _guessValue */
+      dup3
+      lt
+        /* "contracts/slotHack.sol":2325:2558  if (item_2[count_A] > _guessValue) {... */
+      iszero
+      tag_58
+      jumpi
+      pop
+      pop
+        /* "contracts/slotHack.sol":2370:2398  return "Less than the value" */
+      0x40
+      dup1
+      mload
+      dup1
+      dup3
+      add
+      swap1
+      swap2
+      mstore
+      0x13
+      dup2
+      mstore
+      shl(0x68, 0x4c657373207468616e207468652076616c7565)
+      0x20
+      dup3
+      add
+      mstore
+      swap1
+        /* "contracts/slotHack.sol":2064:2564  function guess_item_2(uint256 _guessValue) public view returns(string memory){       ... */
+      jump	// out
+        /* "contracts/slotHack.sol":2325:2558  if (item_2[count_A] > _guessValue) {... */
+    tag_58:
+        /* "contracts/slotHack.sol":2426:2441  item_2[count_A] */
+      0x00
+        /* "contracts/slotHack.sol":2433:2440  count_A */
+      dup1
+      sload
+        /* "contracts/slotHack.sol":2426:2441  item_2[count_A] */
+      dup2
+      mstore
+        /* "contracts/slotHack.sol":2426:2432  item_2 */
+      0x0a
+        /* "contracts/slotHack.sol":2426:2441  item_2[count_A] */
+      0x20
+      mstore
+      0x40
+      swap1
+      keccak256
+      sload
+        /* "contracts/slotHack.sol":2426:2456  item_2[count_A] == _guessValue */
+      dup3
+      swap1
+      sub
+        /* "contracts/slotHack.sol":2422:2558  if (item_2[count_A] == _guessValue) {... */
+      tag_60
+      jumpi
+      pop
+      pop
+        /* "contracts/slotHack.sol":2468:2504  return "YOU WIN! Equal to the value" */
+      0x40
+      dup1
+      mload
+      dup1
+      dup3
+      add
+      swap1
+      swap2
+      mstore
+      0x1b
+      dup2
+      mstore
+      0x594f552057494e2120457175616c20746f207468652076616c75650000000000
+      0x20
+      dup3
+      add
+      mstore
+      swap1
+        /* "contracts/slotHack.sol":2064:2564  function guess_item_2(uint256 _guessValue) public view returns(string memory){       ... */
+      jump	// out
+        /* "contracts/slotHack.sol":2422:2558  if (item_2[count_A] == _guessValue) {... */
+    tag_60:
+      pop
+      pop
+        /* "contracts/slotHack.sol":2531:2545  return "Error" */
+      0x40
+      dup1
+      mload
+      dup1
+      dup3
+      add
+      swap1
+      swap2
+      mstore
+      0x05
+      dup2
+      mstore
+      shl(0xd9, 0x22b93937b9)
+      0x20
+      dup3
+      add
+      mstore
+      swap1
+        /* "contracts/slotHack.sol":2064:2564  function guess_item_2(uint256 _guessValue) public view returns(string memory){       ... */
+      jump	// out
+        /* "#utility.yul":385:565   */
+    tag_24:
+        /* "#utility.yul":444:450   */
+      0x00
+        /* "#utility.yul":497:499   */
+      0x20
+        /* "#utility.yul":485:494   */
+      dup3
+        /* "#utility.yul":476:483   */
+      dup5
+        /* "#utility.yul":472:495   */
+      sub
+        /* "#utility.yul":468:500   */
+      slt
+        /* "#utility.yul":465:517   */
+      iszero
+      tag_67
+      jumpi
+        /* "#utility.yul":513:514   */
+      0x00
+        /* "#utility.yul":510:511   */
+      dup1
+        /* "#utility.yul":503:515   */
+      revert
+        /* "#utility.yul":465:517   */
+    tag_67:
+      pop
+        /* "#utility.yul":536:559   */
+      calldataload
+      swap2
+        /* "#utility.yul":385:565   */
+      swap1
+      pop
+      jump	// out
+        /* "#utility.yul":778:1375   */
+    tag_46:
+        /* "#utility.yul":890:894   */
+      0x00
+        /* "#utility.yul":919:921   */
+      0x20
+        /* "#utility.yul":948:950   */
+      dup1
+        /* "#utility.yul":937:946   */
+      dup4
+        /* "#utility.yul":930:951   */
+      mstore
+        /* "#utility.yul":980:986   */
+      dup4
+        /* "#utility.yul":974:987   */
+      mload
+        /* "#utility.yul":1023:1029   */
+      dup1
+        /* "#utility.yul":1018:1020   */
+      dup3
+        /* "#utility.yul":1007:1016   */
+      dup6
+        /* "#utility.yul":1003:1021   */
+      add
+        /* "#utility.yul":996:1030   */
+      mstore
+        /* "#utility.yul":1048:1049   */
+      0x00
+        /* "#utility.yul":1058:1198   */
+    tag_70:
+        /* "#utility.yul":1072:1078   */
+      dup2
+        /* "#utility.yul":1069:1070   */
+      dup2
+        /* "#utility.yul":1066:1079   */
+      lt
+        /* "#utility.yul":1058:1198   */
+      iszero
+      tag_72
+      jumpi
+        /* "#utility.yul":1167:1181   */
+      dup6
+      dup2
+      add
+        /* "#utility.yul":1163:1186   */
+      dup4
+      add
+        /* "#utility.yul":1157:1187   */
+      mload
+        /* "#utility.yul":1133:1150   */
+      dup6
+      dup3
+      add
+        /* "#utility.yul":1152:1154   */
+      0x40
+        /* "#utility.yul":1129:1155   */
+      add
+        /* "#utility.yul":1122:1188   */
+      mstore
+        /* "#utility.yul":1087:1097   */
+      dup3
+      add
+        /* "#utility.yul":1058:1198   */
+      jump(tag_70)
+    tag_72:
+        /* "#utility.yul":1216:1222   */
+      dup2
+        /* "#utility.yul":1213:1214   */
+      dup2
+        /* "#utility.yul":1210:1223   */
+      gt
+        /* "#utility.yul":1207:1298   */
+      iszero
+      tag_73
+      jumpi
+        /* "#utility.yul":1286:1287   */
+      0x00
+        /* "#utility.yul":1281:1283   */
+      0x40
+        /* "#utility.yul":1272:1278   */
+      dup4
+        /* "#utility.yul":1261:1270   */
+      dup8
+        /* "#utility.yul":1257:1279   */
+      add
+        /* "#utility.yul":1253:1284   */
+      add
+        /* "#utility.yul":1246:1288   */
+      mstore
+        /* "#utility.yul":1207:1298   */
+    tag_73:
+      pop
+        /* "#utility.yul":1359:1361   */
+      0x1f
+        /* "#utility.yul":1338:1353   */
+      add
+      not(0x1f)
+        /* "#utility.yul":1334:1363   */
+      and
+        /* "#utility.yul":1319:1364   */
+      swap3
+      swap1
+      swap3
+      add
+        /* "#utility.yul":1366:1368   */
+      0x40
+        /* "#utility.yul":1315:1369   */
+      add
+      swap4
+        /* "#utility.yul":778:1375   */
+      swap3
+      pop
+      pop
+      pop
+      jump	// out
+
+    auxdata: 0xa26469706673582212204a02561becab7cab018980e3c48bad3df4cc2f8249faef06c12989ca1061c58a64736f6c634300080f0033
+}
